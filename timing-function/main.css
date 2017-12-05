@@ -1,0 +1,67 @@
+body {
+    background: #f1f1f1;
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.block-bar {
+    margin-top: 25px;
+}
+
+.block-title {
+    min-width: 480px;
+}
+
+.block-switch {
+    margin: 3.4rem 0 1.68rem 0;
+    min-width: 170px;
+}
+
+.block-switch label {
+    font-size: 1.6rem;
+}
+
+.col.section-block {
+    padding-bottom: 10px;
+}
+
+.section-title {
+    margin-top: 30px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: #00bcd4;
+    left: 0;
+    opacity: 1;
+}
+
+.box.active {
+    width: 100%;
+}
+
+.transition-linear {
+    transition: all 2s linear;
+}
+
+.transition-ease {
+    transition: all 2s ease;
+}
+
+.transition-ease-in {
+    transition: all 2s ease-in;
+}
+
+.transition-ease-out {
+    transition: all 2s ease-out;
+}
+
+.transition-ease-in-out {
+    transition: all 2s ease-in-out;
+}

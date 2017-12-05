@@ -1,0 +1,406 @@
+body {
+    background: #f1f1f1;
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.block-bar {
+    margin-top: 25px;
+}
+.block-title{
+	min-width: 470px;
+}
+.block-switch {
+    margin: 3.4rem 0 1.68rem 0;
+    min-width: 170px;
+}
+
+.block-switch label {
+    font-size: 1.6rem;
+}
+
+.section-switch {
+    margin-top: 80px;
+    min-width: 164px;
+}
+
+.section-switch label {
+    font-size: 18px;
+}
+
+.rules-check {
+    width: 50%;
+    float: left;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: #00bcd4;
+    left: 0;
+    opacity: 1;
+}
+
+.box-width.active {
+    width: 400px;
+}
+
+.box-height.active {
+    height: 400px;
+}
+
+.box-radius.active {
+    border-radius: 50%;
+}
+
+.box-color.active {
+    background: #f44336;
+}
+
+.box-position.active {
+    left: 20%;
+}
+
+.box-opacity.active {
+    opacity: 0;
+}
+.transition-all-03s-0s {
+    transition: all 0.3s ease-in-out;
+}
+
+.transition-all-05s-0s {
+    transition: all 0.5s ease-in-out;
+}
+
+.transition-all-1s-0s {
+    transition: all 1s ease-in-out;
+}
+
+.transition-all-2s-0s {
+    transition: all 2s ease-in-out;
+}
+
+.transition-all-03s-1s {
+    transition: all 0.3s ease-in-out 1s;
+}
+
+.transition-all-05s-1s {
+    transition: all 0.5s ease-in-out 1s;
+}
+
+.transition-all-1s-1s {
+    transition: all 1s ease-in-out 1s;
+}
+
+.transition-all-2s-1s {
+    transition: all 2s ease-in-out 1s;
+}
+
+.transition-all-03s-2s {
+    transition: all 0.3s ease-in-out 2s;
+}
+
+.transition-all-05s-2s {
+    transition: all 0.5s ease-in-out 2s;
+}
+
+.transition-all-1s-2s {
+    transition: all 1s ease-in-out 2s;
+}
+
+.transition-all-2s-2s {
+    transition: all 2s ease-in-out 2s;
+}
+
+.transition-width-03s-0s {
+    transition: width 0.3s ease-in-out;
+}
+
+.transition-width-05s-0s {
+    transition: width 0.5s ease-in-out;
+}
+
+.transition-width-1s-0s {
+    transition: width 1s ease-in-out;
+}
+
+.transition-width-2s-0s {
+    transition: width 2s ease-in-out;
+}
+
+.transition-width-03s-1s {
+    transition: width 0.3s ease-in-out 1s;
+}
+
+.transition-width-05s-1s {
+    transition: width 0.5s ease-in-out 1s;
+}
+
+.transition-width-1s-1s {
+    transition: width 1s ease-in-out 1s;
+}
+
+.transition-width-2s-1s {
+    transition: width 2s ease-in-out 1s;
+}
+
+.transition-width-03s-2s {
+    transition: width 0.3s ease-in-out 2s;
+}
+
+.transition-width-05s-2s {
+    transition: width 0.5s ease-in-out 2s;
+}
+
+.transition-width-1s-2s {
+    transition: width 1s ease-in-out 2s;
+}
+
+.transition-width-2s-2s {
+    transition: width 2s ease-in-out 2s;
+}
+
+.transition-height-03s-0s {
+    transition: height 0.3s ease-in-out;
+}
+
+.transition-height-05s-0s {
+    transition: height 0.5s ease-in-out;
+}
+
+.transition-height-1s-0s {
+    transition: height 1s ease-in-out;
+}
+
+.transition-height-2s-0s {
+    transition: height 2s ease-in-out;
+}
+
+.transition-height-03s-1s {
+    transition: height 0.3s ease-in-out 1s;
+}
+
+.transition-height-05s-1s {
+    transition: height 0.5s ease-in-out 1s;
+}
+
+.transition-height-1s-1s {
+    transition: height 1s ease-in-out 1s;
+}
+
+.transition-height-2s-1s {
+    transition: height 2s ease-in-out 1s;
+}
+
+.transition-height-03s-2s {
+    transition: height 0.3s ease-in-out 2s;
+}
+
+.transition-height-05s-2s {
+    transition: height 0.5s ease-in-out 2s;
+}
+
+.transition-height-1s-2s {
+    transition: height 1s ease-in-out 2s;
+}
+
+.transition-height-2s-2s {
+    transition: height 2s ease-in-out 2s;
+}
+
+.transition-radius-03s-0s {
+    transition: border-radius 0.3s ease-in-out;
+}
+
+.transition-radius-05s-0s {
+    transition: border-radius 0.5s ease-in-out;
+}
+
+.transition-radius-1s-0s {
+    transition: border-radius 1s ease-in-out;
+}
+
+.transition-radius-2s-0s {
+    transition: border-radius 2s ease-in-out;
+}
+
+.transition-radius-03s-1s {
+    transition: border-radius 0.3s ease-in-out 1s;
+}
+
+.transition-radius-05s-1s {
+    transition: border-radius 0.5s ease-in-out 1s;
+}
+
+.transition-radius-1s-1s {
+    transition: border-radius 1s ease-in-out 1s;
+}
+
+.transition-radius-2s-1s {
+    transition: border-radius 2s ease-in-out 1s;
+}
+
+.transition-radius-03s-2s {
+    transition: border-radius 0.3s ease-in-out 2s;
+}
+
+.transition-radius-05s-2s {
+    transition: border-radius 0.5s ease-in-out 2s;
+}
+
+.transition-radius-1s-2s {
+    transition: border-radius 1s ease-in-out 2s;
+}
+
+.transition-radius-2s-2s {
+    transition: border-radius 2s ease-in-out 2s;
+}
+
+.transition-background-03s-0s {
+    transition: background 0.3s ease-in-out;
+}
+
+.transition-background-05s-0s {
+    transition: background 0.5s ease-in-out;
+}
+
+.transition-background-1s-0s {
+    transition: background 1s ease-in-out;
+}
+
+.transition-background-2s-0s {
+    transition: background 2s ease-in-out;
+}
+
+.transition-background-03s-1s {
+    transition: background 0.3s ease-in-out 1s;
+}
+
+.transition-background-05s-1s {
+    transition: background 0.5s ease-in-out 1s;
+}
+
+.transition-background-1s-1s {
+    transition: background 1s ease-in-out 1s;
+}
+
+.transition-background-2s-1s {
+    transition: background 2s ease-in-out 1s;
+}
+
+.transition-background-03s-2s {
+    transition: background 0.3s ease-in-out 2s;
+}
+
+.transition-background-05s-2s {
+    transition: background 0.5s ease-in-out 2s;
+}
+
+.transition-background-1s-2s {
+    transition: background 1s ease-in-out 2s;
+}
+
+.transition-background-2s-2s {
+    transition: background 2s ease-in-out 2s;
+}
+
+.transition-position-03s-0s {
+    transition: left 0.3s ease-in-out;
+}
+
+.transition-position-0.5s-0s {
+    transition: left 0.5s ease-in-out;
+}
+
+.transition-position-1s-0s {
+    transition: left 1s ease-in-out;
+}
+
+.transition-position-2s-0s {
+    transition: left 2s ease-in-out;
+}
+
+.transition-position-03s-1s {
+    transition: left 0.3s ease-in-out 1s;
+}
+
+.transition-position-05s-1s {
+    transition: left 0.5s ease-in-out 1s;
+}
+
+.transition-position-1s-1s {
+    transition: left 1s ease-in-out 1s;
+}
+
+.transition-position-2s-1s {
+    transition: left 2s ease-in-out 1s;
+}
+
+.transition-position-03s-2s {
+    transition: left 0.3s ease-in-out 2s;
+}
+
+.transition-position-05s-2s {
+    transition: left 0.5s ease-in-out 2s;
+}
+
+.transition-position-1s-2s {
+    transition: left 1s ease-in-out 2s;
+}
+
+.transition-position-2s-2s {
+    transition: left 2s ease-in-out 2s;
+}
+
+.transition-opacity-03s-0s {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.transition-opacity-05s-0s {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.transition-opacity-1s-0s {
+    transition: opacity 1s ease-in-out;
+}
+
+.transition-opacity-2s-0s {
+    transition: opacity 2s ease-in-out;
+}
+
+.transition-opacity-03s-1s {
+    transition: opacity 0.3s ease-in-out 1s;
+}
+
+.transition-opacity-05s-1s {
+    transition: opacity 0.5s ease-in-out 1s;
+}
+
+.transition-opacity-1s-1s {
+    transition: opacity 1s ease-in-out 1s;
+}
+
+.transition-opacity-2s-1s {
+    transition: opacity 2s ease-in-out 1s;
+}
+
+.transition-opacity-03s-2s {
+    transition: opacity 0.3s ease-in-out 2s;
+}
+
+.transition-opacity-05s-2s {
+    transition: opacity 0.5s ease-in-out 2s;
+}
+
+.transition-opacity-1s-2s {
+    transition: opacity 1s ease-in-out 2s;
+}
+
+.transition-opacity-2s-2s {
+    transition: opacity 2s ease-in-out 2s;
+}

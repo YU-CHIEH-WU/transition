@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="mainController">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="card z-depth-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 block-bar">
+                    <div class="col s6 block-title">
+                        <h1 class="left-align">Timing-Function</h1></div>
+                    <div class="col s2 block-switch">
+                        <div class="switch">
+                            <label>Off
+                                <input type="checkbox" ng-model="transitionOn"><span class="lever"></span> On
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="divider"></div>
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12 section-block">
+                            <div class="col s2 section-title">
+                                <h5>linear</h5>
+                            </div>
+                            <div class="col s10">
+                                <div class="box transition-linear center-align" ng-class="{active:transitionOn}"></div>
+                            </div>
+                        </div>
+                        <div class="col s12 section-block">
+                            <div class="col s2 section-title">
+                                <h5>ease</h5>
+                            </div>
+                            <div class="col s10">
+                                <div class="box transition-ease center-align" ng-class="{active:transitionOn}"></div>
+                            </div>
+                        </div>
+                        <div class="col s12 section-block">
+                            <div class="col s2 section-title">
+                                <h5>ease-in</h5>
+                            </div>
+                            <div class="col s10">
+                                <div class="box transition-ease-in center-align" ng-class="{active:transitionOn}"></div>
+                            </div>
+                        </div>
+                        <div class="col s12 section-block">
+                            <div class="col s2 section-title">
+                                <h5>ease-out</h5>
+                            </div>
+                            <div class="col s10">
+                                <div class="box transition-ease-out center-align" ng-class="{active:transitionOn}"></div>
+                            </div>
+                        </div>
+                        <div class="col s12 section-block">
+                            <div class="col s2 section-title">
+                                <h5>ease-in-out</h5>
+                            </div>
+                            <div class="col s10">
+                                <div class="box transition-ease-in-out center-align" ng-class="{active:transitionOn}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script src="main.js"></script>
+
+</html>

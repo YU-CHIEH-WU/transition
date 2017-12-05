@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="mainController">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="card z-depth-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 block-bar">
+                    <div class="col s6 block-title">
+                        <h1 class="left-align">CSS3 Transition</h1></div>
+                    <div class="col s2 block-switch">
+                        <div class="switch">
+                            <label>Off
+                                <input type="checkbox" ng-model="transitionOn" ng-change="setRule()"><span class="lever"></span> On
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Rules</h3>
+                    <div class="row">
+                    <div class="col s4">
+                            <h5>property</h5>
+                            <form>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property1" ng-model="property" value="all"/>
+                                    <label for="property1" ng-click="setRule()">all</label>
+                                </p>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property2" ng-model="property" value="width" />
+                                    <label for="property2" ng-click="setRule()">width</label>
+                                </p>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property3" ng-model="property" value="height" />
+                                    <label for="property3" ng-click="setRule()">height</label>
+                                </p>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property4" ng-model="property" value="radius" />
+                                    <label for="property4" ng-click="setRule()">border-radius</label>
+                                </p>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property5" ng-model="property" value="background" />
+                                    <label for="property5" ng-click="setRule()">background</label>
+                                </p>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property6" ng-model="property" value="position" />
+                                    <label for="property6" ng-click="setRule()">position</label>
+                                </p>
+                                <p class="rules-check">
+                                    <input name="property" type="radio" id="property7" ng-model="property" value="opactiy" />
+                                    <label for="property7" ng-click="setRule()">opacity</label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="col s4">
+                            <h5>duration</h5>
+                            <p class="rules-check">
+                                <input name="duration" type="radio" id="duration1" ng-model="duration" value="03s" />
+                                <label for="duration1" ng-click="setRule()">0.3s</label>
+                            </p>
+                            <p class="rules-check">
+                                <input name="duration" type="radio" id="duration2" ng-model="duration" value="05s" />
+                                <label for="duration2" ng-click="setRule()">0.5s</label>
+                            </p>
+                            <p class="rules-check">
+                                <input name="duration" type="radio" id="duration3" ng-model="duration" value="1s" />
+                                <label for="duration3" ng-click="setRule()">1s</label>
+                            </p>
+                            <p class="rules-check">
+                                <input name="duration" type="radio" id="duration4" ng-model="duration" value="2s" />
+                                <label for="duration4" ng-click="setRule()">2s</label>
+                            </p>
+                        </div>
+                        <div class="col s4">
+                            <h5>delay</h5>
+                            <p class="rules-check">
+                                <input name="delay" type="radio" id="delay1" ng-model="delay" value="0s" />
+                                <label for="delay1" ng-click="setRule()">0s</label>
+                            </p>
+                            <p class="rules-check">
+                                <input name="delay" type="radio" id="delay2" ng-model="delay" value="1s" />
+                                <label for="delay2" ng-click="setRule()">1s</label>
+                            </p>
+                            <p class="rules-check">
+                                <input name="delay" type="radio" id="delay3" ng-model="delay" value="2s" />
+                                <label for="delay3" ng-click="setRule()">2s</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Height</h3>
+                    <div class="row">
+                        <div class="col s2 section-switch">
+                            <div class="switch">
+                                <label>Off
+                                    <input type="checkbox" ng-model="heightOn"><span class="lever"></span> On
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col s9">
+                            <div class="box box-height center-align" ng-class="[transitionRule,{active:heightOn}]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Width</h3>
+                    <div class="row">
+                        <div class="col s2 section-switch">
+                            <div class="switch">
+                                <label>Off
+                                    <input type="checkbox" ng-model="widthOn"><span class="lever"></span> On
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col s9">
+                            <div class="box box-width center-align" ng-class="[transitionRule,{active:widthOn}]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Border-radius</h3>
+                    <div class="row">
+                        <div class="col s2 section-switch">
+                            <div class="switch">
+                                <label>Off
+                                    <input type="checkbox" ng-model="radiusOn"><span class="lever"></span> On
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col s9">
+                            <div class="box box-radius center-align" ng-class="[transitionRule,{active:radiusOn}]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Background</h3>
+                    <div class="row">
+                        <div class="col s2 section-switch">
+                            <div class="switch">
+                                <label>Off
+                                    <input type="checkbox" ng-model="colorOn"><span class="lever"></span> On
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col s9">
+                            <div class="box box-color center-align" ng-class="[transitionRule,{active:colorOn}]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Position</h3>
+                    <div class="row">
+                        <div class="col s2 section-switch">
+                            <div class="switch">
+                                <label>Off
+                                    <input type="checkbox" ng-model="positionOn"><span class="lever"></span> On
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col s9">
+                            <div class="box box-position center-align" ng-class="[transitionRule,{active:positionOn}]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h3>Opacity</h3>
+                    <div class="row">
+                        <div class="col s2 section-switch">
+                            <div class="switch">
+                                <label>Off
+                                    <input type="checkbox" ng-model="opacityOn"><span class="lever"></span> On
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col s9">
+                            <div class="box box-opacity center-align" ng-class="[transitionRule,{active:opacityOn}]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script src="main.js"></script>
+
+</html>
